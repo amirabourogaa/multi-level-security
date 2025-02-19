@@ -155,8 +155,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 50px;
+  margin-right: 20px;
 }
 
 .header .logo h1 {
@@ -244,6 +244,7 @@ h6 {
     list-style: none;
     align-items: center;
   }
+
 
   .navmenu li {
     position: relative;
