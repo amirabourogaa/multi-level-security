@@ -24,6 +24,8 @@
       href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
       href="assets/vendor/glightbox/css/glightbox.min.css"
@@ -57,7 +59,11 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html#hero" class="active" style="color: #014aab;">Accueil</a></li>
+            <li>
+              <a href="index.html#hero" class="active" style="color: #014aab"
+                >Accueil</a
+              >
+            </li>
             <li><a href="index.html#about">A propos</a></li>
             <li><a href="index.html#Engagements">Engagements</a></li>
             <li><a href="index.html#formations">Formations</a></li>
@@ -177,7 +183,77 @@
         </div>
       </section>
       <!-- /About Section -->
-
+     <!-- Portfolio Section -->
+     <section id="portfolio" class="portfolio section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nos Réalisations</h2>
+        <p>
+          Découvrez nos projets récents qui illustrent notre savoir-faire et
+          notre engagement envers l'excellence.
+        </p>
+      </div>
+      <!-- End Section Title -->
+    
+      <div class="container">
+        <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-3"><img src="assets/img/portfolio/p1.jpg" class="d-block w-100 rounded" alt="Portfolio 1"></div>
+                <div class="col-md-3"><img src="assets/img/portfolio/p2.jpg" class="d-block w-100 rounded" alt="Portfolio 2"></div>
+                <div class="col-md-3"><img src="assets/img/portfolio/p3.jpg" class="d-block w-100 rounded" alt="Portfolio 3"></div>
+                <div class="col-md-3"><img src="assets/img/portfolio/p4.jpg" class="d-block w-100 rounded" alt="Portfolio 4"></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-3"><img src="assets/img/portfolio/p5.jpg" class="d-block w-100 rounded" alt="Portfolio 5"></div>
+                <div class="col-md-3"><img src="assets/img/portfolio/p6.jpg" class="d-block w-100 rounded" alt="Portfolio 6"></div>
+                <div class="col-md-3"><img src="assets/img/portfolio/p1.jpg" class="d-block w-100 rounded" alt="Portfolio 1"></div>
+                <div class="col-md-3"><img src="assets/img/portfolio/p2.jpg" class="d-block w-100 rounded" alt="Portfolio 2"></div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        effect: 'fade', // Ajout de l'effet de fondu
+        fadeEffect: { crossFade: true },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          }
+        }
+      });
+    </script>
+    <!-- /Portfolio Section -->
       <!-- Services Section -->
       <section id="services" class="services section py-5 bg-light">
         <div class="container text-center section-title" data-aos="fade-up">
@@ -238,22 +314,23 @@
                   <ul class="list-unstyled text-muted">
                     <li>
                       <i class="bi bi-dot text-primary me-2"></i
-                      ><b>Maintenance préventive : </b>Vérification régulière, tests de performance et mises à jour logicielles.
-
+                      ><b>Maintenance préventive : </b>Vérification régulière,
+                      tests de performance et mises à jour logicielles.
                     </li>
                     <li>
                       <i class="bi bi-dot text-primary me-2"></i
-                      ><b>Maintenance corrective :</b> Intervention rapide en cas de panne ou de dysfonctionnement.
-
+                      ><b>Maintenance corrective :</b> Intervention rapide en
+                      cas de panne ou de dysfonctionnement.
                     </li>
                     <li>
                       <i class="bi bi-dot text-primary me-2"></i
-                      ><b>Support technique :</b> Assistance téléphonique et dépannage sur site.
-
+                      ><b>Support technique :</b> Assistance téléphonique et
+                      dépannage sur site.
                     </li>
                     <li>
                       <i class="bi bi-dot text-primary me-2"></i
-                      ><b>Contrats de maintenance :</b> Solutions adaptées pour assurer un fonctionnement continu et fiable.
+                      ><b>Contrats de maintenance :</b> Solutions adaptées pour
+                      assurer un fonctionnement continu et fiable.
                     </li>
                   </ul>
                 </div>
@@ -325,72 +402,81 @@
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <h3>Formation Technique Spécialisée: </h3>
+              <h3>Formation Technique Spécialisée:</h3>
               <p>
-                Découvrez nos formations techniques spécialisées sur les scanners à rayons X et les portiques détecteurs de métaux. Ces formations sont conçues pour les professionnels de la sûreté et du contrôle d’accès, leur permettant d’acquérir les compétences essentielles pour l’installation, l’exploitation et la maintenance de ces équipements de détection.
-
-            
-
+                Découvrez nos formations techniques spécialisées sur les
+                scanners à rayons X et les portiques détecteurs de métaux. Ces
+                formations sont conçues pour les professionnels de la sûreté et
+                du contrôle d’accès, leur permettant d’acquérir les compétences
+                essentielles pour l’installation, l’exploitation et la
+                maintenance de ces équipements de détection.
               </p>
               <ul class="mt-4 mb-4">
-                <h4 style="font-weight: bold;">Objectifs de la formation :                </h4>
+                <h4 style="font-weight: bold">Objectifs de la formation :</h4>
                 <li>
                   <i class="bi bi-check"></i>
-                  <span> Comprendre le fonctionnement des scanners à rayons X et des portiques détecteurs de métaux
-
+                  <span>
+                    Comprendre le fonctionnement des scanners à rayons X et des
+                    portiques détecteurs de métaux
                   </span>
                 </li>
                 <li>
                   <i class="bi bi-check"></i>
-                  <span>Apprendre à interpréter les images générées par les scanners à rayons X
-
+                  <span
+                    >Apprendre à interpréter les images générées par les
+                    scanners à rayons X
                   </span>
                 </li>
                 <li>
                   <i class="bi bi-check"></i>
-                  <span>Maîtriser les techniques d’inspection et de détection des menaces
-
+                  <span> Maîtriser les techniques d’inspection et de détection des
+                    menaces
                   </span>
                 </li>
                 <li>
                   <i class="bi bi-check"></i>
-                  <span>Respecter les normes de sécurité et la réglementation en vigueur
+                  <span
+                    >Respecter les normes de sécurité et la réglementation en
+                    vigueur
                   </span>
                 </li>
                 <li>
                   <i class="bi bi-check"></i>
-                  <span>Assurer l’entretien et le dépannage des équipements
-
+                  <span
+                    >Assurer l’entretien et le dépannage des équipements
                   </span>
                 </li>
-               
               </ul>
               <ul class="mt-4 mb-4">
-                <h4 style="font-weight: bold;"> Public cible :</h4>
+                <h4 style="font-weight: bold">Public cible :</h4>
                 <li>
                   <i class="bi bi-check"></i>
-                  <span>Agents de sûreté aéroportuaire et ferroviaire
+                  <span>Agents de sûreté aéroportuaire et ferroviaire </span>
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span>Professionnels de la sécurité privée et publique </span>
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span
+                    >Techniciens de maintenance des équipements de détection
                   </span>
                 </li>
                 <li>
                   <i class="bi bi-check"></i>
-                  <span>Professionnels de la sécurité privée et publique
+                  <span
+                    >Responsables de la sûreté dans les entreprises et les
+                    administrations
                   </span>
                 </li>
-                <li>
-                  <i class="bi bi-check"></i>
-                  <span>Techniciens de maintenance des équipements de détection
-                  </span>
-                </li>
-                <li>
-                  <i class="bi bi-check"></i>
-                  <span>Responsables de la sûreté dans les entreprises et les administrations
-
-                  </span>
-                </li>
-               
               </ul>
-              <br> <p>Nos formations allient théorie et pratique, avec des mises en situation réelles pour garantir une maîtrise complète des outils de détection.</p>
+              <br />
+              <p>
+                Nos formations allient théorie et pratique, avec des mises en
+                situation réelles pour garantir une maîtrise complète des
+                outils de détection.
+              </p>
               <a href="#contact" class="btn btn-get-started"
                 >Demander un devis</a
               >
@@ -488,149 +574,6 @@
       </section>
       <!-- End Features Section -->
 
-      <!-- Portfolio Section -->
-      <section id="portfolio" class="portfolio section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Nos Réalisations</h2>
-          <p>
-            Découvrez nos projets récents qui illustrent notre savoir-faire et
-            notre engagement envers l'excellence.
-          </p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container">
-          <div
-            class="isotope-layout"
-            data-default-filter="*"
-            data-layout="masonry"
-            data-sort="original-order"
-          >
-            <div
-              class="row gy-4 isotope-container"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <img
-                  src="assets/img/portfolio/p1.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <a
-                    href="assets/img/portfolio/p1.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <img
-                  src="assets/img/portfolio/p2.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <a
-                    href="assets/img/portfolio/p2.jpg"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <img
-                  src="assets/img/portfolio/p3.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <a
-                    href="assets/img/portfolio/p3.jpg"
-                    data-gallery="portfolio-gallery-branding"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <img
-                  src="assets/img/portfolio/p4.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <a
-                    href="assets/img/portfolio/p4.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <img
-                  src="assets/img/portfolio/p5.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <a
-                    href="assets/img/portfolio/p5.jpg"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <img
-                  src="assets/img/portfolio/p6.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <a
-                    href="assets/img/portfolio/p6.jpg"
-                    data-gallery="portfolio-gallery-branding"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-            </div>
-            <!-- End Portfolio Container -->
-          </div>
-        </div>
-      </section>
-      <!-- /Portfolio Section -->
 
       <!-- Contact Section -->
       <section id="contact" class="contact section">
@@ -852,7 +795,8 @@
 
     <!-- Preloader -->
     <div id="preloader"></div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>

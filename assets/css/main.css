@@ -2866,3 +2866,27 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+.swiper {
+  width: 90%; /* Réduit la largeur à 90% */
+  max-width: 1200px; /* Limite la largeur */
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: space-around; /* Distribue mieux les images */
+  align-items: center;
+  padding: 10px; /* Ajoute un peu d’espace */
+}
+.carousel-img {
+  width: 250px; /* Largeur fixe */
+  height: 250px; /* Hauteur fixe */
+  object-fit: cover; /* Garde le ratio en remplissant */
+  border-radius: 15px; /* Coins plus arrondis */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.carousel-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
