@@ -1,537 +1,832 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Multi-level-security</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Multi-level-security</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: Append
   * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
   * Updated: Aug 07 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body class="index-page">
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center ms-5 me-auto me-xl-0"
+        >
+          <img src="assets/img/logo.jpg" alt="" />
+        </a>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center ms-5 me-auto me-xl-0">
-        <img src="assets/img/logo.jpg" alt="">
-      </a>
-      
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html#hero" class="active">Accueil</a></li>
-          <li><a href="index.html#about">A propos</a></li>
-          <li><a href="index.html#Engagements">Engagements</a></li>
-          <li><a href="index.html#formations">Formations</a></li>
-          <li><a href="index.html#location">Location</a></li>
-          <li><a href="index.html#portfolio">Gallerie</a></li>
-         
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="btn-getstarted" href="index.html#about">Commencer</a>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-   <!-- Hero Section -->
-<section id="hero" class="hero section dark-background">
-
-  <img src="assets/img/hero-bg.jpg" alt="Sécurité et protection" data-aos="fade-in">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10">
-        <h2 data-aos="fade-up" data-aos-delay="100">Anticipez les risques, sécurisez l’avenir</h2>
-        <p data-aos="fade-up" data-aos-delay="200">
-          Nous combinons <strong>des technologies avancées</strong> et une expertise éprouvée pour anticiper les risques, détecter les menaces et sécuriser votre environnement à tous les niveaux.
-        </p>
-      </div>
-     
-    </div>
-  </div>
-
-</section><!-- /Hero Section -->
-
-
-  
-   <!-- About Section -->
-<section id="about" class="about section light-background">
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row align-items-xl-center gy-5">
-
-      <div class="col-xl-5 content">
-        <h3>Qui sommes-nous ?</h3>
-        <h2>Experts en solutions de sécurité depuis 18 ans</h2>
-        <p>Multilevel Security est une entreprise spécialisée dans la vente, l’installation et la maintenance des scanners à rayon x, portiques détecteurs de métaux, détecteurs de traces d'explosifs et narcotiques, et bollards. Grâce à une équipe d’ingénieurs forts de 18 ans d’expérience, nous proposons des solutions performantes pour sécuriser : </p>
-        <ul>
-          <li>Les sites sensibles</li>
-          <li>Les infrastructures publiques et privées</li>
-          <li>Les événements à forte affluence</li>
-        </ul>
-        <a href="#" class="read-more"><span>En savoir plus</span><i class="bi bi-arrow-right"></i></a>
-      </div>
-
-      <div class="col-xl-7">
-        <div class="row gy-4 icon-boxes">
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box">
-              <i class="bi bi-shield-lock"></i>
-              <h3>Sécurité Maximale</h3>
-              <p>Des solutions innovantes pour la protection des lieux sensibles contre les menaces.</p>
-            </div>
-          </div> <!-- End Icon Box -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <i class="bi bi-tools"></i>
-              <h3>Installation & Maintenance</h3>
-              <p>Nos experts assurent une installation optimale et un suivi technique de qualité.</p>
-            </div>
-          </div> <!-- End Icon Box -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon-box">
-              <i class="bi bi-people"></i>
-              <h3>Équipe expérimentée</h3>
-              <p>Une équipe d’ingénieurs spécialisés avec plus de 18 ans d’expérience dans le domaine.</p>
-            </div>
-          </div> <!-- End Icon Box -->
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i class="bi bi-building"></i>
-              <h3>Clients diversifiés</h3>
-              <p>Nous travaillons avec des institutions publiques, privées et des organisateurs d’événements.</p>
-            </div>
-          </div> <!-- End Icon Box -->
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</section><!-- /About Section -->
-
-
-  
-
-   <!-- Services Section -->
-<section id="services" class="services section py-5 bg-light">
-  <div class="container text-center section-title" data-aos="fade-up">
-    <h2 class="mb-4 fw-bold">Nos Services</h2>
-    <p class="text-muted">Des solutions complètes pour l'installation, la maintenance et le support de vos équipements de sécurité.</p>
-  </div>
-
-  <div class="container">
-    <div class="row g-4">
-      <!-- Vente et Installation -->
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-item card shadow-sm border-0 p-4 d-flex flex-row align-items-center">
-          <div class="icon text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px; background-color: #014AAB;">
-            <i class="bi bi-tools fs-3" style="color: white;"></i>
-          </div>
-          <div>
-            <h4 class="fw-semibold">Vente et Installation</h4>
-            <ul class="list-unstyled text-muted">
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Conseil personnalisé pour le choix des équipements adaptés.</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Installation par des techniciens qualifiés.</li>
-              <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Formation des utilisateurs pour une exploitation optimale.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Maintenance et Support -->
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item card shadow-sm border-0 p-4 d-flex flex-row align-items-center">
-          <div class="icon text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px; background-color: #014AAB;">
-            <i style="color: white;" class="bi bi-shield-check fs-3"></i>
-          </div>
-          <div>
-            <h4 class="fw-semibold">Maintenance et Support</h4>
-            <ul class="list-unstyled text-muted">
-              <li><i class="bi bi-dot text-primary me-2"></i><b>Maintenance préventive :</b> Vérification régulière et mises à jour.</li>
-              <li><i class="bi bi-dot text-primary me-2"></i><b>Maintenance corrective :</b> Intervention rapide en cas de panne.</li>
-              <li><i class="bi bi-dot text-primary me-2"></i><b>Support technique :</b> Assistance téléphonique et dépannage sur site.</li>
-              <li><i class="bi bi-dot text-primary me-2"></i><b>Contrats de maintenance :</b> Solutions adaptées pour un fonctionnement continu.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- Nos Engagements Section -->
-<section id="Engagements" class="features section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Nos Engagements</h2>
-    <p>Nous mettons notre expertise et nos technologies au service de votre sécurité.</p>
-  </div><!-- End Section Title -->
-
-  <div class="container">
-
-    <div class="row gy-4 align-items-center features-item">
-      <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-        <h3>Un engagement fort envers la qualité et l’innovation</h3>
-        <ul>
-          <li><i class="bi bi-check-circle"></i> <b>Expérience :</b> Une équipe d’ingénieurs avec 18 ans d’expertise.</li>
-          <li><i class="bi bi-check-circle"></i> <b>Qualité et fiabilité :</b> Produits conformes aux normes internationales de sûreté.</li>
-          <li><i class="bi bi-check-circle"></i> <b>Réactivité :</b> Assistance et interventions rapides.</li>
-          <li><i class="bi bi-check-circle"></i> <b>Innovation :</b> Technologies de pointe pour une sécurité optimale.</li>
-          <li><i class="bi bi-check-circle"></i> <b>Expertise :</b> Équipe technique qualifiée et formée aux dernières innovations.</li>
-        </ul>
-      </div>
-     
-    </div><!-- Features Item -->
-
-  </div>
-
-</section><!-- /Nos Engagements Section -->
-
-<!-- Features Section -->
-<section id="features" class="features section">
-
-
-  <div class="container">
-    <!-- Formation Feature -->
-    <div class="row gy-4 align-items-center features-item">
-      <div id="formations" class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-        <h3>Formation Technique Spécialisée</h3>
-        <p>
-          Nos formations techniques spécialisées sur les scanners à rayons X et les portiques détecteurs de métaux sont conçues pour les professionnels de la sûreté et du contrôle d'accès.
-        </p>
-        <ul class="mt-4 mb-4">
-          <li><i class="bi bi-check"></i> <span>Comprendre le fonctionnement des équipements</span></li>
-          <li><i class="bi bi-check"></i> <span>Interpréter les images des scanners</span></li>
-          <li><i class="bi bi-check"></i> <span>Maîtriser les techniques d'inspection</span></li>
-          <li><i class="bi bi-check"></i> <span>Respecter les normes de sécurité</span></li>
-          <li><i class="bi bi-check"></i> <span>Assurer l'entretien des équipements</span></li>
-        </ul>
-        <a href="#contact" class="btn btn-get-started">Demander un devis</a>
-      </div>
-      <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-        <div class="image-stack">
-          <img src="assets/img/features-light-1.jpg" alt="Formation sécurité" class="stack-front">
-          <img src="assets/img/features-light-2.jpg" alt="Formation pratique" class="stack-back">
-        </div>
-      </div>
-    </div><!-- End Formation Feature -->
-
-    <!-- Location Feature -->
-    <div id="location" class="row gy-4 align-items-stretch justify-content-between features-item">
-      <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-        <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="Équipements de sécurité">
-      </div>
-      <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
-        <h3>Location d'Équipements de Sécurité</h3>
-        <p>Nous proposons un service de location d'équipements de sécurité pour répondre à vos besoins temporaires en contrôle d'accès et en sûreté.</p>
-        <ul>
-          <li><i class="bi bi-check"></i> <span>Scanners à rayons X pour l'inspection des bagages</span></li>
-          <li><i class="bi bi-check"></i> <span>Portiques détecteurs de métaux</span></li>
-          <li><i class="bi bi-check"></i> <span>Détecteurs de métaux portatifs</span></li>
-          <li><i class="bi bi-check"></i> <span>Systèmes de vidéosurveillance temporaires</span></li>
-        </ul>
-        <div class="mt-4">
-          <h4 class="fs-5 mb-3">Avantages de la location :</h4>
+        <nav id="navmenu" class="navmenu">
           <ul>
-            <li><i class="bi bi-check"></i> <span>Solution économique et flexible</span></li>
-            <li><i class="bi bi-check"></i> <span>Équipements modernes aux normes</span></li>
-            <li><i class="bi bi-check"></i> <span>Installation et maintenance incluses</span></li>
+            <li><a href="index.html#hero" class="active">Accueil</a></li>
+            <li><a href="index.html#about">A propos</a></li>
+            <li><a href="index.html#Engagements">Engagements</a></li>
+            <li><a href="index.html#formations">Formations</a></li>
+            <li><a href="index.html#location">Location</a></li>
+            <li><a href="index.html#portfolio">Gallerie</a></li>
+
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
-        </div>
-        <a href="#contact" class="btn btn-get-started align-self-start mt-4">Nous contacter</a>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
       </div>
-    </div><!-- End Location Feature -->
-  </div>
-</section><!-- End Features Section -->
+    </header>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
+        <img
+          src="assets/img/hero-bg.jpg"
+          alt="Sécurité et protection"
+          data-aos="fade-in"
+        />
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Nos Réalisations</h2>
-<p>Découvrez nos projets récents qui illustrent notre savoir-faire et notre engagement envers l'excellence.</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10">
+              <h2 data-aos="fade-up" data-aos-delay="100">
+                Anticipez les risques, sécurisez l’avenir
+              </h2>
+              <p data-aos="fade-up" data-aos-delay="200">
+                Nous combinons <strong>des technologies avancées</strong> et une
+                expertise éprouvée pour anticiper les risques, détecter les
+                menaces et sécuriser votre environnement à tous les niveaux.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Hero Section -->
 
-      </div><!-- End Section Title -->
+      <!-- About Section -->
+      <section id="about" class="about section light-background">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-xl-center gy-5">
+            <div class="col-xl-5 content">
+              <h3>Qui sommes-nous ?</h3>
+              <h2>Experts en solutions de sécurité depuis 18 ans</h2>
+              <p>
+                Multilevel Security est une entreprise spécialisée dans la
+                vente, l’installation et la maintenance des scanners à rayon x,
+                portiques détecteurs de métaux, détecteurs de traces d'explosifs
+                et narcotiques, et bollards. Grâce à une équipe d’ingénieurs
+                forts de 18 ans d’expérience, nous proposons des solutions
+                performantes pour sécuriser : 
+              </p>
+              <ul>
+                <li>Les sites sensibles</li>
+                <li>Les infrastructures publiques et privées</li>
+                <li>Les événements à forte affluence</li>
+              </ul>
+              <a href="#" class="read-more"
+                ><span>En savoir plus</span><i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
 
-      <div class="container">
+            <div class="col-xl-7">
+              <div class="row gy-4 icon-boxes">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon-box">
+                    <i class="bi bi-shield-lock"></i>
+                    <h3>Sécurité Maximale</h3>
+                    <p>
+                      Des solutions innovantes pour la protection des lieux
+                      sensibles contre les menaces.
+                    </p>
+                  </div>
+                </div>
+                <!-- End Icon Box -->
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon-box">
+                    <i class="bi bi-tools"></i>
+                    <h3>Installation & Maintenance</h3>
+                    <p>
+                      Nos experts assurent une installation optimale et un suivi
+                      technique de qualité.
+                    </p>
+                  </div>
+                </div>
+                <!-- End Icon Box -->
 
-       
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                  <div class="icon-box">
+                    <i class="bi bi-people"></i>
+                    <h3>Équipe expérimentée</h3>
+                    <p>
+                      Une équipe d’ingénieurs spécialisés avec plus de 18 ans
+                      d’expérience dans le domaine.
+                    </p>
+                  </div>
+                </div>
+                <!-- End Icon Box -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/p1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <a href="assets/img/portfolio/p1.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                  <div class="icon-box">
+                    <i class="bi bi-building"></i>
+                    <h3>Clients diversifiés</h3>
+                    <p>
+                      Nous travaillons avec des institutions publiques, privées
+                      et des organisateurs d’événements.
+                    </p>
+                  </div>
+                </div>
+                <!-- End Icon Box -->
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/p2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-           
-                <a href="assets/img/portfolio/p2.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/p3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-        
-                <a href="assets/img/portfolio/p3.jpg"  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/p4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-            
-                <a href="assets/img/portfolio/p4.jpg"  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/p5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                
-                <a href="assets/img/portfolio/p5.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/p6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-             
-                <a href="assets/img/portfolio/p6.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-           
-
-          </div><!-- End Portfolio Container -->
-
+      <!-- Services Section -->
+      <section id="services" class="services section py-5 bg-light">
+        <div class="container text-center section-title" data-aos="fade-up">
+          <h2 class="mb-4 fw-bold">Nos Services</h2>
+          <p class="text-muted">
+            Des solutions complètes pour l'installation, la maintenance et le
+            support de vos équipements de sécurité.
+          </p>
         </div>
 
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-  
-  
-
- 
- 
-
-   
-
-  <!-- Contact Section -->
-<section id="contact" class="contact section">
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Contactez-nous</h2>
-    <p>Notre équipe d'experts est à votre disposition pour répondre à vos besoins en matière de sécurité et de détection</p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row gy-4">
-      <div class="col-lg-6">
-        <div class="row gy-4">
-          <div class="col-md-6">
-            <div class="info-item" data-aos="fade" data-aos-delay="200">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Adresse</h3>
-              <p>Cité ennasr</p>
-              <p>Tunisie</p>
+        <div class="container">
+          <div class="row g-4">
+            <!-- Vente et Installation -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div
+                class="service-item card shadow-sm border-0 p-4 d-flex flex-row align-items-center"
+              >
+                <div
+                  class="icon text-white rounded-circle d-flex align-items-center justify-content-center me-3"
+                  style="width: 60px; height: 60px; background-color: #014aab"
+                >
+                  <i class="bi bi-tools fs-3" style="color: white"></i>
+                </div>
+                <div>
+                  <h4 class="fw-semibold">Vente et Installation</h4>
+                  <ul class="list-unstyled text-muted">
+                    <li>
+                      <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                      Conseil personnalisé pour le choix des équipements
+                      adaptés.
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                      Installation par des techniciens qualifiés.
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                      Formation des utilisateurs pour une exploitation optimale.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div><!-- End Info Item -->
 
-          <div class="col-md-6">
-            <div class="info-item" data-aos="fade" data-aos-delay="300">
-              <i class="bi bi-telephone"></i>
-              <h3>Téléphone</h3>
-              <p>+216 25 555 504</p>
+            <!-- Maintenance et Support -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div
+                class="service-item card shadow-sm border-0 p-4 d-flex flex-row align-items-center"
+              >
+                <div
+                  class="icon text-white rounded-circle d-flex align-items-center justify-content-center me-3"
+                  style="width: 60px; height: 60px; background-color: #014aab"
+                >
+                  <i style="color: white" class="bi bi-shield-check fs-3"></i>
+                </div>
+                <div>
+                  <h4 class="fw-semibold">Maintenance et Support</h4>
+                  <ul class="list-unstyled text-muted">
+                    <li>
+                      <i class="bi bi-dot text-primary me-2"></i
+                      ><b>Maintenance préventive :</b> Vérification régulière et
+                      mises à jour.
+                    </li>
+                    <li>
+                      <i class="bi bi-dot text-primary me-2"></i
+                      ><b>Maintenance corrective :</b> Intervention rapide en
+                      cas de panne.
+                    </li>
+                    <li>
+                      <i class="bi bi-dot text-primary me-2"></i
+                      ><b>Support technique :</b> Assistance téléphonique et
+                      dépannage sur site.
+                    </li>
+                    <li>
+                      <i class="bi bi-dot text-primary me-2"></i
+                      ><b>Contrats de maintenance :</b> Solutions adaptées pour
+                      un fonctionnement continu.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item" data-aos="fade" data-aos-delay="400">
-              <i class="bi bi-envelope"></i>
-              <h3>Email</h3>
-              <p>contact@multi-level-security.com</p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item" data-aos="fade" data-aos-delay="500">
-              <i class="bi bi-clock"></i>
-              <h3>Horaires</h3>
-              <p>Lundi - Vendredi</p>
-              <p>9h00 - 18h00</p>
-            </div>
-          </div><!-- End Info Item -->
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="col-lg-6">
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+      <!-- Nos Engagements Section -->
+      <section id="Engagements" class="features section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Nos Engagements</h2>
+          <p>
+            Nous mettons notre expertise et nos technologies au service de votre
+            sécurité.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-4 align-items-center features-item">
+            <div
+              class="col-lg-8 order-2 order-lg-1"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3>Un engagement fort envers la qualité et l’innovation</h3>
+              <ul>
+                <li>
+                  <i class="bi bi-check-circle"></i> <b>Expérience : </b> Une
+                  équipe d’ingénieurs avec 18 ans d’expertise.
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <b>Qualité et fiabilité : </b> Produits conformes aux normes
+                  internationales de sûreté.
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <b>Réactivité : </b> Assistance et interventions rapides.
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <b>Innovation : </b> Technologies de pointe pour une sécurité
+                  optimale.
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i> <b>Expertise : </b> Équipe
+                  technique qualifiée et formée aux dernières innovations.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Features Item -->
+        </div>
+      </section>
+      <!-- /Nos Engagements Section -->
+
+      <!-- Features Section -->
+      <section id="features" class="features section">
+        <div class="container">
+          <!-- Formation Feature -->
+          <div class="row gy-4 align-items-center features-item">
+            <div
+              id="formations"
+              class="col-lg-5 order-2 order-lg-1"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3>Formation Technique Spécialisée</h3>
+              <p>
+                Nos formations techniques spécialisées sur les scanners à rayons
+                X et les portiques détecteurs de métaux sont conçues pour les
+                professionnels de la sûreté et du contrôle d'accès.
+              </p>
+              <ul class="mt-4 mb-4">
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span>Comprendre le fonctionnement des équipements</span>
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span>Interpréter les images des scanners</span>
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span>Maîtriser les techniques d'inspection</span>
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span>Respecter les normes de sécurité</span>
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span>Assurer l'entretien des équipements</span>
+                </li>
+              </ul>
+              <a href="#contact" class="btn btn-get-started"
+                >Demander un devis</a
+              >
+            </div>
+            <div
+              class="col-lg-7 order-1 order-lg-2 d-flex align-items-center"
+              data-aos="zoom-out"
+              data-aos-delay="100"
+            >
+              <div class="image-stack">
+                <img
+                  src="assets/img/features-light-1.jpg"
+                  alt="Formation sécurité"
+                  class="stack-front"
+                />
+                <img
+                  src="assets/img/features-light-2.jpg"
+                  alt="Formation pratique"
+                  class="stack-back"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- End Formation Feature -->
+
+          <!-- Location Feature -->
+          <div
+            id="location"
+            class="row gy-4 align-items-stretch justify-content-between features-item"
+          >
+            <div
+              class="col-lg-6 d-flex align-items-center features-img-bg"
+              data-aos="zoom-out"
+            >
+              <img
+                src="assets/img/features-light-3.jpg"
+                class="img-fluid"
+                alt="Équipements de sécurité"
+              />
+            </div>
+            <div
+              class="col-lg-5 d-flex justify-content-center flex-column"
+              data-aos="fade-up"
+            >
+              <h3>Location d'Équipements de Sécurité</h3>
+              <p>
+                Nous proposons un service de location d'équipements de sécurité
+                pour répondre à vos besoins temporaires en contrôle d'accès et
+                en sûreté.
+              </p>
+              <ul>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span>Scanners à rayons X pour l'inspection des bagages</span>
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span>Portiques détecteurs de métaux</span>
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span>Détecteurs de métaux portatifs</span>
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span>Systèmes de vidéosurveillance temporaires</span>
+                </li>
+              </ul>
+              <div class="mt-4">
+                <h4 class="fs-5 mb-3">Avantages de la location :</h4>
+                <ul>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Solution économique et flexible</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Équipements modernes aux normes</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Installation et maintenance incluses</span>
+                  </li>
+                </ul>
+              </div>
+              <a
+                href="#contact"
+                class="btn btn-get-started align-self-start mt-4"
+                >Nous contacter</a
+              >
+            </div>
+          </div>
+          <!-- End Location Feature -->
+        </div>
+      </section>
+      <!-- End Features Section -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Nos Réalisations</h2>
+          <p>
+            Découvrez nos projets récents qui illustrent notre savoir-faire et
+            notre engagement envers l'excellence.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/portfolio/p1.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <a
+                    href="assets/img/portfolio/p1.jpg"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <img
+                  src="assets/img/portfolio/p2.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <a
+                    href="assets/img/portfolio/p2.jpg"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <img
+                  src="assets/img/portfolio/p3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <a
+                    href="assets/img/portfolio/p3.jpg"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/portfolio/p4.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <a
+                    href="assets/img/portfolio/p4.jpg"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <img
+                  src="assets/img/portfolio/p5.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <a
+                    href="assets/img/portfolio/p5.jpg"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <img
+                  src="assets/img/portfolio/p6.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <a
+                    href="assets/img/portfolio/p6.jpg"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contactez-nous</h2>
+          <p>
+            Notre équipe d'experts est à votre disposition pour répondre à vos
+            besoins en matière de sécurité et de détection
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4">
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Votre nom" required>
+            <div class="col-lg-6">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <div class="info-item" data-aos="fade" data-aos-delay="200">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Adresse</h3>
+                    <p>Cité ennasr</p>
+                    <p>Tunisie</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="col-md-6">
+                  <div class="info-item" data-aos="fade" data-aos-delay="300">
+                    <i class="bi bi-telephone"></i>
+                    <h3>Téléphone</h3>
+                    <p>+216 25 555 504</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="col-md-6">
+                  <div class="info-item" data-aos="fade" data-aos-delay="400">
+                    <i class="bi bi-envelope"></i>
+                    <h3>Email</h3>
+                    <p>contact@multi-level-security.com</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="col-md-6">
+                  <div class="info-item" data-aos="fade" data-aos-delay="500">
+                    <i class="bi bi-clock"></i>
+                    <h3>Horaires</h3>
+                    <p>Lundi - Vendredi</p>
+                    <p>9h00 - 18h00</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+              </div>
             </div>
 
-            <div class="col-md-6">
-              <input type="email" class="form-control" name="email" placeholder="Votre email" required>
+            <div class="col-lg-6">
+              <form
+                action="forms/contact.php"
+                method="post"
+                class="php-email-form"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Votre nom"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Votre email"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <select class="form-control" name="subject" required>
+                      <option value="">Sélectionnez un sujet</option>
+                      <option value="devis">Demande de devis</option>
+                      <option value="formation">
+                        Information sur les formations
+                      </option>
+                      <option value="location">Location d'équipements</option>
+                      <option value="maintenance">Service maintenance</option>
+                      <option value="autre">Autre demande</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="6"
+                      placeholder="Votre message"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class="loading">Chargement</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Votre message a bien été envoyé. Merci !
+                    </div>
+
+                    <button type="submit">Envoyer le message</button>
+                  </div>
+                </div>
+              </form>
             </div>
+            <!-- End Contact Form -->
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
 
-            <div class="col-12">
-              <select class="form-control" name="subject" required>
-                <option value="">Sélectionnez un sujet</option>
-                <option value="devis">Demande de devis</option>
-                <option value="formation">Information sur les formations</option>
-                <option value="location">Location d'équipements</option>
-                <option value="maintenance">Service maintenance</option>
-                <option value="autre">Autre demande</option>
-              </select>
-            </div>
-
-            <div class="col-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Votre message" required></textarea>
-            </div>
-
-            <div class="col-12 text-center">
-              <div class="loading">Chargement</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Votre message a bien été envoyé. Merci !</div>
-
-              <button type="submit">Envoyer le message</button>
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">Multi-level-security</span>
+            </a>
+            <p>
+              <strong>Multilevel Security</strong> est une entreprise
+              spécialisée dans la
+              <strong>vente, l'installation et la maintenance</strong> des
+              <strong>scanners de sécurité et portiques de détection</strong>.
+              Grâce à une équipe d'ingénieurs
+              <strong>forts de 18 ans d'expérience</strong>, nous proposons des
+              solutions performantes pour sécuriser les sites sensibles, les
+              infrastructures publiques et privées, ainsi que les événements à
+              forte affluence.
+            </p>
+            <div class="social-links d-flex mt-4">
+              <!-- <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a> -->
+              <a href="#" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
             </div>
           </div>
-        </form>
-      </div><!-- End Contact Form -->
-    </div>
-  </div>
-</section><!-- End Contact Section -->
 
-  </main>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#home">Accueil</a></li>
+              <li><a href="#about">À propos</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#mentions-legales">Mentions légales</a></li>
+            </ul>
+          </div>
 
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Multi-level-security</span>
-          </a>
-          <p><strong>Multilevel Security</strong> est une entreprise spécialisée dans la <strong>vente, l'installation et la maintenance</strong> des <strong>scanners de sécurité et portiques de détection</strong>. Grâce à une équipe d'ingénieurs <strong>forts de 18 ans d'expérience</strong>, nous proposons des solutions performantes pour sécuriser les sites sensibles, les infrastructures publiques et privées, ainsi que les événements à forte affluence.</p>
-          <div class="social-links d-flex mt-4">
-            <!-- <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a> -->
-            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Nos Services</h4>
+            <ul>
+              <li><a href="#scanners">Scanners de sécurité</a></li>
+              <li><a href="#portiques">Portiques de détection</a></li>
+              <li><a href="#formation">Formation</a></li>
+              <li><a href="#location">Location d'équipements</a></li>
+              <li><a href="#maintenance">Maintenance</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+          >
+            <h4>Contactez-nous</h4>
+            <p>Cité ennasr</p>
+            <p>Tunisie</p>
+            <p>France</p>
+            <p class="mt-4">
+              <strong>Téléphone:</strong> <span>+216 25 555 504</span>
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <span>contact@multi-level-security.com</span>
+            </p>
           </div>
         </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#mentions-legales">Mentions légales</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Nos Services</h4>
-          <ul>
-            <li><a href="#scanners">Scanners de sécurité</a></li>
-            <li><a href="#portiques">Portiques de détection</a></li>
-            <li><a href="#formation">Formation</a></li>
-            <li><a href="#location">Location d'équipements</a></li>
-            <li><a href="#maintenance">Maintenance</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contactez-nous</h4>
-          <p>Cité ennasr</p>
-          <p>Tunisie</p>
-          <p>France</p>
-          <p class="mt-4"><strong>Téléphone:</strong> <span>+216 25 555 504</span></p>
-          <p><strong>Email:</strong> <span>contact@multi-level-security.com</span></p>
-        </div>
-
       </div>
-    </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="sitename">Multi-level-security</strong> <span>Tous droits réservés</span></p>
-      <!-- <div class="credits">
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span>
+          <strong class="sitename">Multi-level-security</strong>
+          <span>Tous droits réservés</span>
+        </p>
+        <!-- <div class="credits">
         <span>RCS Paris B 123 456 789 | SIRET 123 456 789 00001</span>
       </div> -->
-    </div>
+      </div>
+    </footer>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-</footer>
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
