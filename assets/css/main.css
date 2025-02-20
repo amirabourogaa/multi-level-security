@@ -147,7 +147,7 @@ h6 {
   background-color: var(--background-color);
   padding: 20px 0;
   transition: all 0.5s;
-  /* z-index: 997; */
+  z-index: 997;
   font-weight: bold;
 }
 
@@ -156,8 +156,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 80px;
-  margin-right: 20px;
+  max-height: 100px;
+  /* margin-right: 40px; */
 }
 
 .header .logo h1 {
