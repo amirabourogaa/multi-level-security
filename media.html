@@ -109,10 +109,10 @@
 
              
               <div class="post-gallery">
-                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
-                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
-                <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
-                <img src="assets/img/blog/blog-4.jpg" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-1.jpg" onclick="openLightbox(this)" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-2.jpg" onclick="openLightbox(this)" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-3.jpg" onclick="openLightbox(this)" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-4.jpg" onclick="openLightbox(this)" alt="" class="img-fluid">
               </div>
             </article>
           </div>
@@ -129,10 +129,10 @@ LIBYAN CIVIL AVIATION AUTHORITY
              </p>
 
               <div class="post-gallery">
-                <img src="assets/img/blog/blog-2-1.jpeg.jpg" alt="" class="img-fluid">
-                <img src="assets/img/blog/blog-2-2.jpeg" alt="" class="img-fluid">
-                <img src="assets/img/blog/blog-2-3.jpeg" alt="" class="img-fluid">
-                <img src="assets/img/blog/blog-2-4.jpeg" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-2-1.jpeg.jpg" onclick="openLightbox(this)" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-2-2.jpeg" onclick="openLightbox(this)" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-2-3.jpeg" onclick="openLightbox(this)" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-2-4.jpeg" onclick="openLightbox(this)" alt="" class="img-fluid">
               </div>
             </article>
           </div>
@@ -151,10 +151,10 @@ LIBYAN CIVIL AVIATION AUTHORITY
           
 
               <div class="post-gallery">
-                <img src="assets/img/blog/blog-3-1.jpeg" alt="" class="img-fluid">
-                <img src="assets/img/blog/blog-3-2.jpeg" alt="" class="img-fluid">
-                <img src="assets/img/blog/blog-3-3.jpeg" alt="" class="img-fluid">
-                <img src="assets/img/blog/blog-3-4.jpeg" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-3-1.jpeg"  onclick="openLightbox(this)" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-3-2.jpeg" onclick="openLightbox(this)" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-3-3.jpeg" onclick="openLightbox(this)" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-3-4.jpeg" onclick="openLightbox(this)" alt="" class="img-fluid">
               </div>
             </article>
           </div>
@@ -171,10 +171,10 @@ LIBYAN CIVIL AVIATION AUTHORITY
               </p>
 
               <div class="post-gallery">
-                <img src="assets/img/blog/blog-4-1.jpeg" alt="" class="img-fluid">
-                <img src="assets/img/blog/blog-4-2.jpeg" alt="" class="img-fluid">
-                <img src="assets/img/blog/blog-4-3.jpeg" alt="" class="img-fluid">
-                <img src="assets/img/blog/blog-4-4.jpeg" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-4-1.jpeg" onclick="openLightbox(this)" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-4-2.jpeg" onclick="openLightbox(this)" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-4-3.jpeg"  onclick="openLightbox(this)" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-4-4.jpeg" onclick="openLightbox(this)" alt="" class="img-fluid">
               </div>
             </article>
           </div>
@@ -185,15 +185,16 @@ LIBYAN CIVIL AVIATION AUTHORITY
             <article>
              
               <h4>             
-                MISRATA                 </h4>
+                MISRATA
+              </h4>
              <p class="post-description">
               Completion of technical training for Misrata airport engineers on conventional scanners, many thanks to Culmen International for this opportunity and the airport management for this award
              </p>
 
 
               <div class="post-gallery">
-                <img src="assets/img/blog/blog-5-1.jpeg" alt="" class="img-fluid">
-                <img src="assets/img/blog/blog-5-2.jpeg" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-5-1.jpeg" onclick="openLightbox(this)" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-5-2.jpeg" onclick="openLightbox(this)" alt="" class="img-fluid">
                 
               </div>
             </article>
@@ -209,6 +210,16 @@ LIBYAN CIVIL AVIATION AUTHORITY
   <img id="lightbox-img" src="" alt="">
 </div>
 
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" class="img-fluid" alt="Preview">
+      </div>
+    </div>
+  </div>
+</div>
 
   </main>
 
@@ -303,12 +314,15 @@ LIBYAN CIVIL AVIATION AUTHORITY
   <script src="assets/js/main.js"></script>
  
   <script>
-    function openLightbox(image) {
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      lightboxImg.src = image.src;
-      lightbox.classList.add('active');
-    }
+
+  function openLightbox(image) {
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = image.src;
+    
+    // Afficher le modal Bootstrap
+    var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+    imageModal.show();
+  }
   
     function closeLightbox() {
       const lightbox = document.getElementById('lightbox');
