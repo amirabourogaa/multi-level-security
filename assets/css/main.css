@@ -2253,6 +2253,25 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin-bottom: 0;
 }
+.blog-posts .post-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.blog-posts .post-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.blog-posts .post-description {
+  font-size: 16px;
+  color: var(--default-color);
+  margin-bottom: 15px;
+}
+
 
 /*--------------------------------------------------------------
 # Blog Pagination Section
