@@ -24,7 +24,10 @@
       href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
@@ -35,7 +38,6 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-
   </head>
 
   <body class="index-page">
@@ -62,6 +64,7 @@
             <li><a href="index.html#Engagements">Engagements</a></li>
             <li><a href="index.html#formations">Formations</a></li>
             <li><a href="index.html#location">Location</a></li>
+            <li><a href="media.html">Media</a></li>
 
             <li><a href="index.html#contact">Contact</a></li>
           </ul>
@@ -176,82 +179,119 @@
         </div>
       </section>
       <!-- /About Section -->
-     <!-- Portfolio Section -->
-     <section id="portfolio" class="portfolio section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Nos Réalisations</h2>
-        <p>
-          Découvrez nos projets récents qui illustrent notre savoir-faire et
-          notre engagement envers l'excellence.
-        </p>
-      </div>
-      <!-- End Section Title -->
-    
-      <div class="container">
-        <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-3"><img src="assets/img/portfolio/p5.jpg" class="d-block w-100 rounded" alt="Portfolio 1"></div>
-                <div class="col-md-3"><img src="assets/img/portfolio/p2.jpg" class="d-block w-100 rounded" alt="Portfolio 2"></div>
-                <div class="col-md-3"><img src="assets/img/portfolio/p3.jpg" class="d-block w-100 rounded" alt="Portfolio 3"></div>
-                <div class="col-md-3"><img src="assets/img/portfolio/p4.jpg" class="d-block w-100 rounded" alt="Portfolio 4"></div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-3"><img src="assets/img/portfolio/p5.jpg" class="d-block w-100 rounded" alt="Portfolio 5"></div>
-                <div class="col-md-3"><img src="assets/img/portfolio/p6.jpg" class="d-block w-100 rounded" alt="Portfolio 6"></div>
-                <div class="col-md-3"><img src="assets/img/portfolio/p3.jpg" class="d-block w-100 rounded" alt="Portfolio 1"></div>
-                <div class="col-md-3"><img src="assets/img/portfolio/p2.jpg" class="d-block w-100 rounded" alt="Portfolio 2"></div>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Nos Réalisations</h2>
+          <p>
+            Découvrez nos projets récents qui illustrent notre savoir-faire et
+            notre engagement envers l'excellence.
+          </p>
         </div>
-      </div>
-    </section>
-    <script>
-     var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  loop: true,
-  effect: 'fade', // Effet de fondu
-  fadeEffect: { crossFade: true },
-  autoplay: {
-    delay: 5000, // Définit un délai de 5 secondes avant le changement d'image
-    disableOnInteraction: false, // Continue l'autoplay même après une interaction utilisateur
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    }
-  }
-});
+        <!-- End Section Title -->
 
-  </script>
-    <!-- /Portfolio Section -->
+        <div class="container">
+          <div
+            id="portfolioCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img
+                      src="assets/img/portfolio/p5.jpg"
+                      class="d-block w-100 rounded"
+                      alt="Portfolio 1"
+                    />
+                  </div>
+                  <div class="col-md-3">
+                    <img
+                      src="assets/img/portfolio/p2.jpg"
+                      class="d-block w-100 rounded"
+                      alt="Portfolio 2"
+                    />
+                  </div>
+                  <div class="col-md-3">
+                    <img
+                      src="assets/img/portfolio/p3.jpg"
+                      class="d-block w-100 rounded"
+                      alt="Portfolio 3"
+                    />
+                  </div>
+                  <div class="col-md-3">
+                    <img
+                      src="assets/img/portfolio/p4.jpg"
+                      class="d-block w-100 rounded"
+                      alt="Portfolio 4"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img
+                      src="assets/img/portfolio/p5.jpg"
+                      class="d-block w-100 rounded"
+                      alt="Portfolio 5"
+                    />
+                  </div>
+                  <div class="col-md-3">
+                    <img
+                      src="assets/img/portfolio/p6.jpg"
+                      class="d-block w-100 rounded"
+                      alt="Portfolio 6"
+                    />
+                  </div>
+                  <div class="col-md-3">
+                    <img
+                      src="assets/img/portfolio/p3.jpg"
+                      class="d-block w-100 rounded"
+                      alt="Portfolio 1"
+                    />
+                  </div>
+                  <div class="col-md-3">
+                    <img
+                      src="assets/img/portfolio/p2.jpg"
+                      class="d-block w-100 rounded"
+                      alt="Portfolio 2"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#portfolioCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark rounded-circle p-2"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#portfolioCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark rounded-circle p-2"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- /Portfolio Section -->
       <!-- Services Section -->
       <section id="services" class="services section py-5 bg-light">
         <div class="container text-center section-title" data-aos="fade-up">
@@ -393,153 +433,180 @@
       <section id="features" class="features section">
         <div class="container">
           <!-- Formation Feature -->
-          <h3 style="font-weight: bold;">Formation Technique Spécialisée:</h3>
+          <h3 style="font-weight: bold">Formation Technique Spécialisée:</h3>
           <p>
-            Découvrez nos formations techniques spécialisées sur les scanners à rayons X, portiques détecteurs de métaux, et détecteurs de traces d'explosifs et narcotiques. Ces formations sont conçues pour les professionnels de la sûreté et
-            du contrôle d’accès, leur permettant d’acquérir les compétences
-            essentielles pour l’installation, l’exploitation et la
-            maintenance de ces équipements de détection.
+            Découvrez nos formations techniques spécialisées sur les scanners à
+            rayons X, portiques détecteurs de métaux, et détecteurs de traces
+            d'explosifs et narcotiques. Ces formations sont conçues pour les
+            professionnels de la sûreté et du contrôle d’accès, leur permettant
+            d’acquérir les compétences essentielles pour l’installation,
+            l’exploitation et la maintenance de ces équipements de détection.
           </p>
 
           <div class="row gy-4 align-items-center features-item">
-           
             <div
-            id="formations"
-            class="col-lg-5 order-2 order-lg-1"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-           
-         
-            <ul class="mt-4 mb-4">
-              <h4 style="font-weight: bold">Objectifs de la formation :</h4>
-              <li>
-              
-                <span>
-                  comprendre le fonctionnement des systèmes de détection
-                </span>
-              </li>
-              <li>
-              
-                <span
-                  >Apprendre à interpréter les images générées par les
-                  scanners à rayons X
-                </span>
-              </li>
-              <li>
-              
-                <span> Maîtriser les techniques d’inspection et de détection des
-                  menaces
-                </span>
-              </li>
-              <li>
-              
-                <span
-                  >Respecter les normes de sécurité et la réglementation en
-                  vigueur
-                </span>
-              </li>
-              <li>
-              
-                <span
-                  >Assurer l’entretien et le dépannage des équipements
-                </span>
-              </li>
-            </ul>
-            <ul class="mt-4 mb-4">
-              <h4 style="font-weight: bold">Public cible :</h4>
-              <li>
-              
-                <span>Agents de sûreté aéroportuaire et ferroviaire </span>
-              </li>
-              <li>
-              
-                <span>Professionnels de la sécurité privée et publique </span>
-              </li>
-              <li>
-              
-                <span
-                  >Techniciens de maintenance des équipements de détection
-                </span>
-              </li>
-              <li>
-              
-                <span
-                  >Responsables de la sûreté dans les entreprises et les
-                  administrations
-                </span>
-              </li>
-            </ul>
-            <br />
-            <p>
-              Nos formations allient théorie et pratique, avec des mises en
-              situation réelles pour garantir une maîtrise complète des
-              outils de détection.
-            </p>
-         
-          </div>
+              id="formations"
+              class="col-lg-5 order-2 order-lg-1"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ul class="mt-4 mb-4">
+                <h4 style="font-weight: bold">Objectifs de la formation :</h4>
+                <li>
+                  <span>
+                    comprendre le fonctionnement des systèmes de détection
+                  </span>
+                </li>
+                <li>
+                  <span
+                    >Apprendre à interpréter les images générées par les
+                    scanners à rayons X
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    Maîtriser les techniques d’inspection et de détection des
+                    menaces
+                  </span>
+                </li>
+                <li>
+                  <span
+                    >Respecter les normes de sécurité et la réglementation en
+                    vigueur
+                  </span>
+                </li>
+                <li>
+                  <span
+                    >Assurer l’entretien et le dépannage des équipements
+                  </span>
+                </li>
+              </ul>
+              <ul class="mt-4 mb-4">
+                <h4 style="font-weight: bold">Public cible :</h4>
+                <li>
+                  <span>Agents de sûreté aéroportuaire et ferroviaire </span>
+                </li>
+                <li>
+                  <span>Professionnels de la sécurité privée et publique </span>
+                </li>
+                <li>
+                  <span
+                    >Techniciens de maintenance des équipements de détection
+                  </span>
+                </li>
+                <li>
+                  <span
+                    >Responsables de la sûreté dans les entreprises et les
+                    administrations
+                  </span>
+                </li>
+              </ul>
+              <br />
+              <p>
+                Nos formations allient théorie et pratique, avec des mises en
+                situation réelles pour garantir une maîtrise complète des
+                outils de détection.
+              </p>
+            </div>
             <div
               class="col-lg-6 image-content"
               data-aos="zoom-out"
               data-aos-delay="100"
             >
-              <img src="assets/img/features-light-1.jpg" alt="Formation sécurité" />
-              <img src="assets/img/features-light-2.jpg" alt="Formation pratique" />
+              <img
+                src="assets/img/features-light-1.jpg"
+                alt="Formation sécurité"
+              />
+              <img
+                src="assets/img/features-light-2.jpg"
+                alt="Formation pratique"
+              />
             </div>
           </div>
-          
+
           <!-- End Formation Feature -->
 
-          <div id="location" class="row gy-4 align-items-stretch justify-content-between features-item ">
-            <h1>Location d’Équipements de Sécurité            </h1>
+          <div
+            id="location"
+            class="row gy-4 align-items-stretch justify-content-between features-item"
+          >
+            <h1>Location d’Équipements de Sécurité</h1>
             <p>
-              Nous proposons un service de location d’équipements de sécurité pour répondre à vos besoins temporaires en contrôle d’accès et en sûreté. Que ce soit pour un événement, un site temporaire ou une mission spécifique, nos solutions vous garantissent un haut niveau de sécurité sans investissement à long terme.</p>
-            <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-              <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
+              Nous proposons un service de location d’équipements de sécurité
+              pour répondre à vos besoins temporaires en contrôle d’accès et en
+              sûreté. Que ce soit pour un événement, un site temporaire ou une
+              mission spécifique, nos solutions vous garantissent un haut niveau
+              de sécurité sans investissement à long terme.
+            </p>
+            <div
+              class="col-lg-6 d-flex align-items-center features-img-bg"
+              data-aos="zoom-out"
+            >
+              <img
+                src="assets/img/features-light-3.jpg"
+                class="img-fluid"
+                alt=""
+              />
             </div>
-            <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
-              <h3>Équipements disponibles à la location :              </h3>
+            <div
+              class="col-lg-5 d-flex justify-content-center flex-column"
+              data-aos="fade-up"
+            >
+              <h3>Équipements disponibles à la location :</h3>
               <ul>
-                <li> <span> Scanners à rayons X : Inspection des bagages et colis avec une précision optimale
-                </span></li>
-                <li><span> Portiques détecteurs de métaux : Contrôle rapide et efficace des entrées
-                </span></li>
-                <li> <span>
-                  Détecteurs de métaux portatifs : Inspection ciblée pour un renforcement de la sécurité
-
-                </span>.</li>
-                <li> <span>
-                  Systèmes de vidéosurveillance temporaires : Surveillance en temps réel pour vos sites sensibles
-
-                </span>.</li>
+                <li>
+                  <span>
+                    Scanners à rayons X : Inspection des bagages et colis avec
+                    une précision optimale
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    Portiques détecteurs de métaux : Contrôle rapide et efficace
+                    des entrées
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    Détecteurs de métaux portatifs : Inspection ciblée pour un
+                    renforcement de la sécurité </span
+                  >.
+                </li>
+                <li>
+                  <span>
+                    Systèmes de vidéosurveillance temporaires : Surveillance en
+                    temps réel pour vos sites sensibles </span
+                  >.
+                </li>
               </ul>
-              <h3>Pourquoi choisir la location ?
-              </h3>
+              <h3>Pourquoi choisir la location ?</h3>
               <ul>
-                <li> <span> Solution économique et flexible
-
-                </span></li>
-                <li><span> Équipements modernes et conformes aux normes de sécurité
-
-                </span></li>
-                <li> <span>
-                  Installation et maintenance assurées par nos experts
-
-
-                </span>.</li>
-                <li> <span>
-                  Adapté aux événements et besoins ponctuels
-
-                </span>.</li>
+                <li><span> Solution économique et flexible </span></li>
+                <li>
+                  <span>
+                    Équipements modernes et conformes aux normes de sécurité
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    Installation et maintenance assurées par nos experts </span
+                  >.
+                </li>
+                <li>
+                  <span> Adapté aux événements et besoins ponctuels </span>.
+                </li>
               </ul>
-              <p>Que vous soyez une entreprise, un organisateur d’événements ou une administration, nous vous accompagnons pour une solution sur mesure.</p>
+              <p>
+                Que vous soyez une entreprise, un organisateur d’événements ou
+                une administration, nous vous accompagnons pour une
+                solution sur mesure.
+              </p>
             </div>
-          </div><!-- Features Item -->
-  
+          </div>
+          <!-- Features Item -->
         </div>
       </section>
       <!-- End Features Section -->
-
 
       <!-- Contact Section -->
       <section id="contact" class="contact section">
@@ -599,8 +666,7 @@
 
             <div class="col-lg-6">
               <form
-                action="forms/contact.php"
-                method="post"
+                id="contact-form"
                 class="php-email-form"
                 data-aos="fade-up"
                 data-aos-delay="200"
@@ -615,7 +681,6 @@
                       required
                     />
                   </div>
-
                   <div class="col-md-6">
                     <input
                       type="email"
@@ -625,7 +690,6 @@
                       required
                     />
                   </div>
-
                   <div class="col-12">
                     <input
                       type="text"
@@ -644,7 +708,6 @@
                       required
                     />
                   </div>
-
                   <div class="col-12">
                     <select class="form-control" name="subject" required>
                       <option value="">Sélectionnez un sujet</option>
@@ -657,7 +720,6 @@
                       <option value="autre">Autre demande</option>
                     </select>
                   </div>
-
                   <div class="col-12">
                     <textarea
                       class="form-control"
@@ -667,18 +729,64 @@
                       required
                     ></textarea>
                   </div>
-
                   <div class="col-12 text-center">
-                    <div class="loading">Chargement</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
+                    <div class="loading" style="display: none">
+                      Chargement...
+                    </div>
+                    <div
+                      class="error-message"
+                      style="display: none; color: red"
+                    ></div>
+                    <div
+                      class="sent-message"
+                      style="display: none; color: green"
+                    >
                       Votre message a bien été envoyé. Merci !
                     </div>
-
                     <button type="submit">Envoyer le message</button>
                   </div>
                 </div>
               </form>
+              <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  emailjs.init('Ep8ELD59ryG-vCyUp') // Remplace avec ton User ID EmailJS
+
+                  document
+                    .getElementById('contact-form')
+                    .addEventListener('submit', function (event) {
+                      event.preventDefault()
+
+                      const loading = document.querySelector('.loading')
+                      const errorMessage =
+                        document.querySelector('.error-message')
+                      const sentMessage =
+                        document.querySelector('.sent-message')
+
+                      loading.style.display = 'block'
+                      errorMessage.style.display = 'none'
+                      sentMessage.style.display = 'none'
+
+                      const formData = new FormData(this)
+                      const data = Object.fromEntries(formData)
+
+                      emailjs
+                        .send('service_jxx4xi7', 'template_e8ytgv8', data)
+                        .then(() => {
+                          loading.style.display = 'none'
+                          sentMessage.style.display = 'block'
+                          document.getElementById('contact-form').reset()
+                        })
+                        .catch(error => {
+                          loading.style.display = 'none'
+                          errorMessage.style.display = 'block'
+                          errorMessage.textContent =
+                            "Erreur lors de l'envoi : " + error.text
+                        })
+                    })
+                })
+              </script>
             </div>
             <!-- End Contact Form -->
           </div>
@@ -740,6 +848,15 @@
               <li><a href="#maintenance">Maintenance</a></li>
             </ul>
           </div>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Nos Produits</h4>
+            <ul>
+              <li><a href="#scanners">Smiths Detection</a></li>
+              <li><a href="#portiques">Autoclear</a></li>
+              <li><a href="#formation">Garrett</a></li>
+              <li><a href="#location">Ceia</a></li>
+            </ul>
+          </div>
 
           <div
             class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
@@ -747,7 +864,7 @@
             <h4>Contactez-nous</h4>
             <p>Cité ennasr</p>
             <p>Tunisie</p>
-           
+
             <p class="mt-4">
               <strong>Téléphone:</strong> <span>+216 25 555 504</span>
             </p>
@@ -781,7 +898,7 @@
     <!-- Preloader -->
     <div id="preloader"></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
- 
+
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -792,6 +909,37 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        effect: 'fade', // Effet de fondu
+        fadeEffect: { crossFade: true },
+        autoplay: {
+          delay: 5000, // Définit un délai de 5 secondes avant le changement d'image
+          disableOnInteraction: false // Continue l'autoplay même après une interaction utilisateur
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+        }
+      })
+    </script>
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>

@@ -217,7 +217,7 @@ h6 {
   --background-color: white;
   --heading-color: #ffffff;
   /* --nav-color: rgba(255, 255, 255, 0.5); */
-  --nav-hover-color: #ffffff;
+  --nav-hover-color: rgb(22, 22, 120);
 }
 
 /* Index Page Header on Scroll
