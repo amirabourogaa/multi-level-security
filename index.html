@@ -227,32 +227,37 @@
       </div>
     </section>
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        effect: 'fade', // Ajout de l'effet de fondu
-        fadeEffect: { crossFade: true },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          }
-        }
-      });
-    </script>
+     var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  effect: 'fade', // Effet de fondu
+  fadeEffect: { crossFade: true },
+  autoplay: {
+    delay: 5000, // Définit un délai de 5 secondes avant le changement d'image
+    disableOnInteraction: false, // Continue l'autoplay même après une interaction utilisateur
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    }
+  }
+});
+
+  </script>
     <!-- /Portfolio Section -->
       <!-- Services Section -->
       <section id="services" class="services section py-5 bg-light">
@@ -494,7 +499,52 @@
           
           <!-- End Formation Feature -->
 
-        
+          <div id="location" class="row gy-4 align-items-stretch justify-content-between features-item ">
+            <h1>Location d’Équipements de Sécurité            </h1>
+            <p>
+              Nous proposons un service de location d’équipements de sécurité pour répondre à vos besoins temporaires en contrôle d’accès et en sûreté. Que ce soit pour un événement, un site temporaire ou une mission spécifique, nos solutions vous garantissent un haut niveau de sécurité sans investissement à long terme.</p>
+            <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+              <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
+              <h3>Équipements disponibles à la location :              </h3>
+              <ul>
+                <li> <span> Scanners à rayons X : Inspection des bagages et colis avec une précision optimale
+                </span></li>
+                <li><span> Portiques détecteurs de métaux : Contrôle rapide et efficace des entrées
+                </span></li>
+                <li> <span>
+                  Détecteurs de métaux portatifs : Inspection ciblée pour un renforcement de la sécurité
+
+                </span>.</li>
+                <li> <span>
+                  Systèmes de vidéosurveillance temporaires : Surveillance en temps réel pour vos sites sensibles
+
+                </span>.</li>
+              </ul>
+              <h3>Pourquoi choisir la location ?
+              </h3>
+              <ul>
+                <li> <span> Solution économique et flexible
+
+                </span></li>
+                <li><span> Équipements modernes et conformes aux normes de sécurité
+
+                </span></li>
+                <li> <span>
+                  Installation et maintenance assurées par nos experts
+
+
+                </span>.</li>
+                <li> <span>
+                  Adapté aux événements et besoins ponctuels
+
+                </span>.</li>
+              </ul>
+              <p>Que vous soyez une entreprise, un organisateur d’événements ou une administration, nous vous accompagnons pour une solution sur mesure.</p>
+            </div>
+          </div><!-- Features Item -->
+  
         </div>
       </section>
       <!-- End Features Section -->
